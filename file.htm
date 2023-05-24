@@ -1,70 +1,99 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Phones Gallery</title>
-	<link rel="stylesheet" type="text/css" href="file.css">
-</head>
-<body>
-<section id="container">
-<!-- Nav container -->
-<nav>
-		<a  href="#"> <img id="logo" src="imgs\l.png"> </a>
-		<ul>
-			<a href="#"> <li>home</li> </a>
-			<a href="#"> <li>offers</li> </a>
-			<a href="#"> <li>other Items</li> </a>
-			<a href="#"> <li>contact us</li> </a>
-			<li class="btn-frame">
-				<i class="btn"></i>
-			</li>
-		</ul>
-	</nav>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phones Gallery</title>
+    <link rel="stylesheet" type="text/css" href="file.css" />
+  </head>
 
-<!-- Info about the Items -->
+  <body>
+    <div id="container">
+      <!-- Nav container -->
+      <nav>
+        <div id="id" class="logoContainer">
+          <a href="#">
+            <img id="logo" src="imgs\l.png" alt="Samsung Logo" />
+          </a>
+        </div>
+        <ul>
+          <li>
+            offers
+            <a href="#" alt="offers"></a>
+          </li>
+          <li>
+            other Items
+            <a href="#" alt="other Items"></a>
+          </li>
+          <li>
+            contact us
+            <a href="#" alt="contact us"></a>
+          </li>
+          <li>
+            home
+            <a href="#" alt="home"></a>
+          </li>
+          <li class="btn-frame">
+            <i class="btn"></i>
+          </li>
+        </ul>
+      </nav>
 
-<div id="info">
-<div id="info-content">
-	<h1>Samsung Galaxy Ultra S22</h1>
-	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-</div>
+      <!-- Info about the Items -->
 
-<div id="main-img">
-	<img id="img" src="imgs\1.jpg" draggable="false">
-</div>
-</div>
+      <div id="info">
+        <div id="info-content">
+          <h1>Samsung Galaxy Ultra S22</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco
+          </p>
+        </div>
 
-<!-- the small imgs down the page -->
-<div id="footer">
-<img  onmouseover= "showImg(this.src)" onclick="showImg(this.src)"  src ="imgs\1.jpg">
-<img  onmouseover= "showImg(this.src)" onclick="showImg(this.src)"  src="imgs\2.jpg">
-<img  onmouseover= "showImg(this.src)" onclick="showImg(this.src)"  src="imgs\3.jpg">
-<img  onmouseover= "showImg(this.src)" onclick="showImg(this.src)"  src="imgs\4.jpg">
+        <div id="main-img">
+          <img
+            id="img"
+            src="imgs\1.jpg"
+            draggable="false"
+            alt="The main mobile img"
+          />
+        </div>
+      </div>
 
-</div >	
+      <!-- the small imgs down the page -->
+      <div id="footer">
+		<div class="imgsContainer">
+        <img
+          onmouseover="showImg(this.src)"
+          onclick="showImg(this.src)"
+          src="imgs\1.jpg"
+          alt="mobile img"
+        />
+        <img
+          onmouseover="showImg(this.src)"
+          onclick="showImg(this.src)"
+          src="imgs\2.jpg"
+          alt="mobile img"
+        />
+        <img
+          onmouseover="showImg(this.src)"
+          onclick="showImg(this.src)"
+          src="imgs\3.jpg"
+          alt="mobile img"
+        />
+        <img
+          onmouseover="showImg(this.src)"
+          onclick="showImg(this.src)"
+          src="imgs\4.jpg"
+          alt="mobile img"
+        />
+	  
+	  </div>
+      </div>
+    </div>
 
-</section>
-
-
-
-<script type="text/javascript" src="file.js"></script>
-</body>
-
-
-
-
-
-
-
-
-
+    <script type="text/javascript" src="file.js"></script>
+  </body>
 </html>
 
-<!-- 
-1/ make the parent container.
-2/ put the texts and the logo in their own parent.
-3/ put the background mobile.
-4/ put the other photos inside their own parent.
-
- -->

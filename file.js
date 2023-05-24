@@ -13,6 +13,7 @@ const btn = document.querySelector('.btn');
 btnFrame.addEventListener('click', () => {
 	btn.classList.toggle('toggler');
 	body.classList.toggle('toggler');
+	btnFrame.classList.toggle('toggler');
 }
 );
 
